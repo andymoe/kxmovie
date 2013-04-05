@@ -211,7 +211,8 @@
         parameters[KxMovieParameterMinBufferedDuration] = @(5.0);
     
     // disable deinterlacing for iPhone, because it's complex operation can cause stuttering
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+    //FIXME always disable interlacing for now
+    //if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
         parameters[KxMovieParameterDisableDeinterlacing] = @(YES);
     
     if ([path.pathExtension isEqualToString:@"sdp"]) {
@@ -219,8 +220,8 @@
     }
     NSLog(@"path: %@", path);
     // disable buffering
-    parameters[KxMovieParameterMinBufferedDuration] = @(0.0f);
-    parameters[KxMovieParameterMaxBufferedDuration] = @(0.0f);
+    parameters[KxMovieParameterMinBufferedDuration] = @(0.2f);
+    parameters[KxMovieParameterMaxBufferedDuration] = @(0.6f);
     
     KxMovieViewController *vc = [KxMovieViewController movieViewControllerWithContentPath:path
                                                                                parameters:parameters];
