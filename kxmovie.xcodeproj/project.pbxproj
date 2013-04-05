@@ -17,6 +17,7 @@
 		187B531B170E87C5007A7CBD /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187B531A170E87C5007A7CBD /* Accelerate.framework */; };
 		187B531D170E87CE007A7CBD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187B531C170E87CE007A7CBD /* QuartzCore.framework */; };
 		187B531F170E87D9007A7CBD /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187B531E170E87D9007A7CBD /* OpenGLES.framework */; };
+		188FE56E170EA3FD00B4F33C /* FWFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 188FE56D170EA3FD00B4F33C /* FWFileUtils.m */; };
 		8704657C16F6ECA000D4083E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8704657A16F6EC9100D4083E /* libiconv.dylib */; };
 		87E7940716390F6D000A0848 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87E7940516390F6D000A0848 /* InfoPlist.strings */; };
 		87E7940916390F6D000A0848 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E7940816390F6D000A0848 /* main.m */; };
@@ -64,6 +65,8 @@
 		187B531A170E87C5007A7CBD /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		187B531C170E87CE007A7CBD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		187B531E170E87D9007A7CBD /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		188FE56C170EA3FD00B4F33C /* FWFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWFileUtils.h; sourceTree = "<group>"; };
+		188FE56D170EA3FD00B4F33C /* FWFileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWFileUtils.m; sourceTree = "<group>"; };
 		8704657A16F6EC9100D4083E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		87E793F816390F6D000A0848 /* KxMovieExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KxMovieExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E7940416390F6D000A0848 /* KxMovieExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KxMovieExample-Info.plist"; sourceTree = "<group>"; };
@@ -179,6 +182,8 @@
 				87E7942D1639108E000A0848 /* MainViewController.h */,
 				87E7942E1639108E000A0848 /* MainViewController.m */,
 				87E7940316390F6D000A0848 /* Supporting Files */,
+				188FE56C170EA3FD00B4F33C /* FWFileUtils.h */,
+				188FE56D170EA3FD00B4F33C /* FWFileUtils.m */,
 			);
 			path = KxMovieExample;
 			sourceTree = "<group>";
@@ -312,6 +317,7 @@
 				87E7942A1639107F000A0848 /* KxMovieViewController.m in Sources */,
 				87E7942F1639108E000A0848 /* AppDelegate.m in Sources */,
 				87E794301639108E000A0848 /* MainViewController.m in Sources */,
+				188FE56E170EA3FD00B4F33C /* FWFileUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

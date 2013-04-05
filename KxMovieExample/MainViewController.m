@@ -11,6 +11,7 @@
 
 #import "MainViewController.h"
 #import "KxMovieViewController.h"
+#import "FWFileUtils.h"
 
 @interface MainViewController () {
     NSArray *_localMovies;
@@ -29,7 +30,7 @@
         self.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFeatured tag: 0];
         
         _remoteMovies = @[
-
+            @"drone.sdp"
             @"http://eric.cast.ro/stream2.flv",
             @"http://liveipad.wasu.cn/cctv2_ipad/z.m3u8",                          
             @"http://www.wowza.com/_h264/BigBuckBunny_175k.mov",
@@ -212,6 +213,10 @@
     // disable deinterlacing for iPhone, because it's complex operation can cause stuttering
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
         parameters[KxMovieParameterDisableDeinterlacing] = @(YES);
+    
+    if ([path.pathExtension isEqualToString:@"sdp"]) {
+        path = [FWFileUtils filePathFromBundleWithFileName:[path lastPathComponent]];
+    }
     
     // disable buffering
     //parameters[KxMovieParameterMinBufferedDuration] = @(0.0f);
