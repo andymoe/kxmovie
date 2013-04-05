@@ -30,7 +30,7 @@
         self.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFeatured tag: 0];
         
         _remoteMovies = @[
-            @"drone.sdp"
+            @"multicast_h264_aac_48000.sdp"
             @"http://eric.cast.ro/stream2.flv",
             @"http://liveipad.wasu.cn/cctv2_ipad/z.m3u8",                          
             @"http://www.wowza.com/_h264/BigBuckBunny_175k.mov",
