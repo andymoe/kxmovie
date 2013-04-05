@@ -215,7 +215,7 @@
         parameters[KxMovieParameterDisableDeinterlacing] = @(YES);
     
     if ([path.pathExtension isEqualToString:@"sdp"]) {
-        path = [FWFileUtils filePathFromBundleWithFileName:[path lastPathComponent]];
+        path = [NSString stringWithFormat:@"file:/%@",[FWFileUtils filePathFromBundleWithFileName:[path lastPathComponent]]];
     }
     NSLog(@"path: %@", path);
     // disable buffering
