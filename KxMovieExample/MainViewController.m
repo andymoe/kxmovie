@@ -34,6 +34,7 @@
             @"http://liveipad.wasu.cn/cctv2_ipad/z.m3u8",                          
             @"http://www.wowza.com/_h264/BigBuckBunny_175k.mov",
             // @"http://www.wowza.com/_h264/BigBuckBunny_115k.mov",
+            @"rtsp://70.36.196.50/axis-media/media.amp",
             @"rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov",
             @"http://santai.tv/vod/test/test_format_1.3gp",
             @"http://santai.tv/vod/test/test_format_1.mp4",
