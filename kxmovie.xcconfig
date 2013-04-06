@@ -1,0 +1,9 @@
+//
+//  kxmovie.xcconfig
+//  kxmovie
+//
+//  Created by Andrew Brown on 4/6/13.
+//
+//
+
+OTHER_LDFLAGS=$(inherited) -framework Foundation -framework CoreGraphics -framework MediaPlayer -framework CoreAudio -framework AudioToolbox -framework Accelerate -framework QuartzCore -framework OpenGLES -l libz -l libiconv
