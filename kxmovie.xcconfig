@@ -6,4 +6,4 @@
 //
 //
 
-OTHER_LDFLAGS=$(inherited) -framework Foundation -framework CoreGraphics -framework MediaPlayer -framework CoreAudio -framework AudioToolbox -framework Accelerate -framework QuartzCore -framework OpenGLES -l libz -l libiconv
+// OTHER_LDFLAGS=$(inherited) -framework Foundation -framework CoreGraphics -framework MediaPlayer -framework CoreAudio -framework AudioToolbox -framework Accelerate -framework QuartzCore -framework OpenGLES -l libz -l libiconv	
