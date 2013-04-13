@@ -714,7 +714,7 @@ static NSMutableDictionary * gHistory;
             
             [self setupPresentView];
             
-            _bottomHUD.hidden       = NO;
+            _bottomHUD.hidden       = YES;
             _progressLabel.hidden   = NO;
             _progressSlider.hidden  = NO;
             _leftLabel.hidden       = NO;
