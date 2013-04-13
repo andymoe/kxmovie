@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18E6267117110234006A5D43 /* libkxmovie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E6267017110234006A5D43 /* libkxmovie.a */; };
+		18E62679171104AD006A5D43 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7944416391B9E000A0848 /* libavcodec.a */; };
+		18E6267A171104B2006A5D43 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7944616391B9E000A0848 /* libavformat.a */; };
+		18E6267B171104B5006A5D43 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7944716391B9E000A0848 /* libavutil.a */; };
+		18E6267C171104B7006A5D43 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7944816391B9E000A0848 /* libswresample.a */; };
+		18E6267D171104BA006A5D43 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7944916391B9E000A0848 /* libswscale.a */; };
 		87E793FD16390F6D000A0848 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E793FC16390F6D000A0848 /* UIKit.framework */; };
 		87E7940716390F6D000A0848 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87E7940516390F6D000A0848 /* InfoPlist.strings */; };
 		87E7940916390F6D000A0848 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E7940816390F6D000A0848 /* main.m */; };
@@ -45,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		189E235F1710E66200548C88 /* kxmovie.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = kxmovie.xcconfig; sourceTree = "<group>"; };
+		18E6267017110234006A5D43 /* libkxmovie.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkxmovie.a; path = libs/libkxmovie.a; sourceTree = "<group>"; };
 		87E793F816390F6D000A0848 /* KxMovieExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KxMovieExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E793FC16390F6D000A0848 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		87E7940416390F6D000A0848 /* KxMovieExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KxMovieExample-Info.plist"; sourceTree = "<group>"; };
@@ -87,6 +94,7 @@
 				87E7944E16391B9E000A0848 /* libswresample.a in Frameworks */,
 				87E7944F16391B9E000A0848 /* libswscale.a in Frameworks */,
 				87E793FD16390F6D000A0848 /* UIKit.framework in Frameworks */,
+				18E6267117110234006A5D43 /* libkxmovie.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +102,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E62679171104AD006A5D43 /* libavcodec.a in Frameworks */,
+				18E6267A171104B2006A5D43 /* libavformat.a in Frameworks */,
+				18E6267B171104B5006A5D43 /* libavutil.a in Frameworks */,
+				18E6267C171104B7006A5D43 /* libswresample.a in Frameworks */,
+				18E6267D171104BA006A5D43 /* libswscale.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +136,7 @@
 		87E793FB16390F6D000A0848 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18E6267017110234006A5D43 /* libkxmovie.a */,
 				87E7944416391B9E000A0848 /* libavcodec.a */,
 				87E7944616391B9E000A0848 /* libavformat.a */,
 				87E7944716391B9E000A0848 /* libavutil.a */,
