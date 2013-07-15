@@ -619,10 +619,14 @@ static NSMutableDictionary * gHistory;
 
 - (void) doneDidTouch: (id) sender
 {
-    if (self.presentingViewController || !self.navigationController)
-        [self dismissViewControllerAnimated:YES completion:nil];
-    else
-        [self.navigationController popViewControllerAnimated:YES];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"com.kxmovie.done" object:nil];
+
+// FIXME 
+// we will handle the notification from the parents view for now
+//    if (self.presentingViewController || !self.navigationController)
+//        [self dismissViewControllerAnimated:YES completion:nil];
+//    else
+//        [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void) infoDidTouch: (id) sender
